@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Alata&family=Caveat:wght@700&family=Edu+NSW+ACT+Foundation:wght@700&family=Itim&family=Kalam:wght@400;700&family=Kanit:wght@300&family=Kurale&family=Laila:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Nosifer&family=Oleo+Script&family=Oooh+Baby&family=Pacifico&family=Philosopher:wght@700&family=Sacramento&family=Shrikhand&family=Signika+Negative:wght@600;700&family=Tenali+Ramakrishna&family=Ysabeau+Infant:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+p{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+.nav-bars{
+    display: none;
+    list-style-type: none;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+.x-mark{
+    display: none;
+}
+header ul li a{
+    padding: 0.6rem 1.4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.6s;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+header ul li a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+.home-background-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/Home-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-section1-left{
+    width: 40%;
+}
+.home-section1-left img{
+    width: 80%;
+    border-radius: 6px;
+    margin: 1rem 0.4rem;
+}
+.home-section1-right{
+    width: 40%;
+}
+.home-item-card{
+    text-align: center;
+    width: 18rem;
+}
+.home-item-card img{
+    width: 100%;
+    height: 21rem;
+    border: 2px solid black;
+    outline: 2px solid black;
+    outline-style: groove;
+    outline-offset: 10px;
+}
+.home-item-card h2{
+    margin: 1.5rem 0rem;
+}
+.home-collections-container{
+    margin: auto;
+    width: 80%;
+    margin: 2rem auto;
+    position: relative;
+}
+.home-collections-container img{
+    width: 30%;
+}
+.home-section4-item-card{
+    text-align: center;
+    width: 29%;
+    padding: 1rem;
+}
+.home-section4 a,.contact-section1 a ,.about-section3 a{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    transition: 0.5s;
+}
+.home-section4 a:hover , .contact-section1 a:hover ,.about-section3 a:hover{
+    background-color: rgb(135, 135, 135);
+    color: white;
+}
+
+/* About Styles */
+.about-main-background{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./images/about-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.about-section1{
+    width: 90%;
+    margin: 2rem auto;
+}
+.about-section2 div{
+    width: 40%;
+}
+.about-section2 div img{
+    width: 100%;
+    margin: 1rem auto;
+    border: 10px solid black;
+}
+.about-section3{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+/* Teasers styles */
+.teaser-main-background{
+    width: 60%;
+    height: 100vh;
+    margin: 0rem auto;
+}
+.teaser-back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+    .teaser-back-video{
+        width: 100%;
+        height: auto;
+    }   
+}
+@media (max-aspect-ratio: 16/9) {
+    .teaser-back-video{
+        width: auto;
+        height: 100%;
+    }   
+}
+.teasers-section1{
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.teasers-section2{
+    padding: 6rem 0rem;
+    background-color: rgb(224, 224, 224);
+} 
+.teasers-section2 a{
+    color: red;
+    font-size: 3rem;
+}
+
+
+
+/* Gallery Styles */
+.gallery-main-background{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(./images/gallery-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-section1{
+    width: 80%;
+    margin: 3rem auto;
+}
+.all-gallery-imgs img{
+    width: 20rem;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.all-gallery-imgs img:hover{
+    scale: 1.06;
+    filter: sepia(10px);
+}
+.img-show-container{
+    z-index: 1800;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+}
+.img-show-container{
+    transition: 0.5s;
+    scale: 0;
+}
+.img-show-container img{
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+.btn-close{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: red;
+}
+
+
+/* Moments Styles */
+.moments-main-background{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(./images/moments-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.moments-section1{
+    width: 90%;
+    margin: 2rem auto;
+}
+.moments-section2-sub1 img{
+    width: 30rem;
+}
+.moments-section2-sub1-content{
+    width: 40%;
+}
+.moments-section3 img{
+    width: 100%;
+}
+
+
+
+
+/* Contact Styles */
+.contact-main-background{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./images/contact-backgroud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact-main-background h2, .about-main-background h2,.gallery-main-background h2,.moments-main-background h2,.teaser-main-background h2{
+    font-size: 4rem;
+    color: rgba(255, 166, 0, 0.803);
+}
+.contact-main-background p,.about-main-background p,.gallery-main-background p,.moments-main-background p,.teaser-main-background p{
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact-main-background img, .about-main-background img{
+    right: 1rem;
+    bottom: 1rem;
+}
+.contact-section1{
+    word-wrap: break-word;
+    width: 50%;
+    margin: 4rem auto;
+}
+.contact-section1 span{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.contact-section1 a i{
+    margin: 2rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Whatsapp button */
+.whatsapp-container a i{
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background-color: rgb(85, 255, 85);
+    padding: 0.6rem 0.7rem;
+    border-radius: 50%;
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+    transition: 0.8s;
+    animation: btnAnimation 2s linear infinite;
+    border: 2px solid rgb(85, 255, 85);
+}
+.whatsapp-container a i:hover{
+    color: rgb(85, 255, 85);
+    background-color: white;
+    border: 2px solid rgb(85, 255, 85);
+}
+
+/* Top Button */
+.top-btn-container a i{
+    position: fixed;
+    font-size: 2rem;
+    bottom: 1rem;
+    right: 2rem;
+    color: black;
+    padding: 0.6rem 0.7rem;
+    border-radius: 50%;
+    animation: btnAnimation 2s linear infinite;
+    background-color: rgb(203, 202, 202);
+}
+
+footer{
+    padding: 6rem 0rem;
+    background: url(./images/home-collection-img1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer i{
+    font-size: 2rem;
+    margin: 1rem 1.4rem;
+}
+
+
+
+
+
+
+
+@keyframes btnAnimation {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+
+
+
+@media (min-width:300px) and (max-width:854px) {
+    .nav-bars{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-bars i{
+        margin: 0.1rem 2rem;
+        font-size: 2rem;
+        color: white;
+    }
+    header ul{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        position: absolute;
+        transition: 0.3s;
+        top: 2.6rem;
+        left: 0;
+        width: 0%;
+        padding-top: 2rem;
+        overflow: hidden;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .x-mark{
+        display: block;
+        position: absolute;
+        font-size: 1.6rem;
+        color: white;
+        top: 1rem;
+        right: 2rem;
+    }
+    .home-section1-left{
+        width: 70%;
+    }
+    .home-section1-right{
+        width: 80%;
+    }
+    .home-section1{
+        flex-direction: column;
+    }
+    .home-section2-items{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0.4rem auto;
+    }
+    .home-collections-container{
+        margin: 10rem auto;
+        width: 97%;
+    }
+    .home-collections-container img{
+        width: 31%;
+    }
+    .home-section4-items{
+        flex-direction: column;
+    }
+    .home-section4-item-card{
+        width: 90%;
+        padding: 0.3rem;
+        margin: 2rem auto;
+    }
+    .about-section2{
+        flex-direction: column;
+    }
+    .about-section2 div{
+        width: 90%;
+    }
+    .teaser-back-video{
+        width: 100vw;
+        height: 40vh;
+        top: 0;
+    }
+    .teaser-main-background{
+        padding-top: 28rem;
+        height: 50vh;
+        width: 95vw;
+    }
+    .teasers-section1{
+        margin-top: 10rem;
+        width: 90%;
+    }
+    .teasers-section2{
+        width: 100%;
+    }
+    .teasers-section2 a{
+        font-size: 2rem;
+    }
+    /* Gallery */
+    .img-show-container{
+        top: 30%;
+        left: 6%;
+        width: 86%;
+        height: 40%;
+    }
+    /* Moments styles */
+    .moments-section2-sub1{
+        flex-direction: column;
+    }
+    .moments-section2-sub1 img{
+        width: 20rem;
+    }
+    .moments-section2-sub1-content{
+        width: 90%;
+    }
+    /* Contact Styles */
+    .contact-section1{
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
