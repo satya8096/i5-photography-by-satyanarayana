@@ -164,5 +164,15 @@
 
 
     <script src="./script.js"></script>
+    <script>
+        // Show alert
+
+const  showAlert = e =>{
+    e.preventDefault();
+    return alert("This Page Restricted!");
+}
+
+document.addEventListener("contextmenu",showAlert);
+    </script>
 </body>
 </html>

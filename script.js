@@ -25,3 +25,9 @@ document.addEventListener("click",function(e){
 document.querySelector(".btn-close").onclick = () =>{
     document.querySelector(".img-show-container").style.scale = "0"
 }
+
+
+
+
+// Show alert
+

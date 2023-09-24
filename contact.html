@@ -75,5 +75,13 @@
 <div class="top-btn-container"><a href="#"><i class="fa-solid fa-angles-up"></i></a></div>
 
 <script src="./script.js"></script>
+<script>
+    const  showAlert = e =>{
+    e.preventDefault();
+    return alert("This Page Restricted!");
+}
+
+document.addEventListener("contextmenu",showAlert);
+</script>
 </body>
 </html>
