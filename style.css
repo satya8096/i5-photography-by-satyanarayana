@@ -201,6 +201,9 @@ header ul li a:hover{
     margin: 3rem auto;
     overflow: hidden;
 }
+.all-gallery-imgs{
+    overflow: hidden;
+}
 .all-gallery-imgs img{
     width: 20rem;
     border-radius: 6px;
