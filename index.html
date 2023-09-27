@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="./images/i5-logo.png" type="image/x-icon">
 
     <!-- Scroll Reveal -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Bootstrap Link -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
     <!-- home-section1 -->
     <div class="home-section1 d-flex align-items-center justify-content-around flex-wrap mt-4 mb-4">
         <div class="home-section1-left d-flex align-items-center justify-content-center">
-            <img src="./images/Home-section1-left-img.jpg" alt="" loading="lazy">
+            <img src="./images/Home-section1-left-img.jpg" alt="" loading="lazy" class="home-about-img">
         </div>
         <div class="home-section1-right text-center">
             <h2>About Us</h2>
@@ -59,8 +59,8 @@
     </div>
     <!-- Home section2 -->
     <div class="home-section2">
-        <h1 class="text-center text-primary mt-4 mb-4">Our Services</h1>
-        <p class="w-75 m-auto text-center mb-5">In a world filled with fleeting moments and rapidly changing landscapes, there's an art to capturing life's most poignant and beautiful instances. i5  Photography, led by a team of passionate and skilled photographers, is your portal to a realm where every click of the camera tells a story—a story that's bound to be etched in your heart forever.</p>
+        <h1 class="text-center text-primary mt-4 mb-4 home-section2-heading">Our Services</h1>
+        <p class="w-75 m-auto text-center mb-5 home-section2-content">In a world filled with fleeting moments and rapidly changing landscapes, there's an art to capturing life's most poignant and beautiful instances. i5  Photography, led by a team of passionate and skilled photographers, is your portal to a realm where every click of the camera tells a story—a story that's bound to be etched in your heart forever.</p>
         <div class="home-section2-items d-flex align-items-center justify-content-around flex-wrap">
             <div class="home-item-card">
                 <img src="./images/home-engagement-img.jpg" alt="" loading="lazy">
@@ -81,9 +81,9 @@
     </div>
     <!-- Home section3 -->
     <div class="home-section3 w-100">
-        <h1 class="text-center mt-5 mb-2 text-primary">Our Latest Collections</h1>
+        <h1 class="text-center mt-5 mb-2 text-primary home-section3-heading">Our Latest Collections</h1>
         <div class="home-collections-container d-flex align-items-center justify-content-center flex-wrap">
-            <img src="./images/home-collection-img3.jpg" alt="" class="home-collection-img3" loading="lazy">
+            <img src="./images/home-collection-img3.jpg"  alt="" class="home-collection-img3" loading="lazy">
             <img src="./images/home-collection-img2.jpg" alt="" class="home-collection-img2" loading="lazy">
             <img src="./images/home-collection-img1.JPG" alt="" class="home-collection-img1" loading="lazy">
             <img src="./images/home-collection-img4.jpg" alt="" class="home-collection-img4" loading="lazy">
@@ -97,7 +97,7 @@
 
     <!-- Home section 4 -->
     <div class="home-section4 mb-5 text-center">
-        <h1 class="text-center text-primary mt-5 mb-3">Our Main Principles</h1>
+        <h1 class="text-center text-primary mt-5 mb-3 home-section4-heading">Our Main Principles</h1>
         <div class="home-section4-items d-flex  justify-content-around flex-wrap">
             <div class="home-section4-item-card">
                 <h2> (i) Vision and Creativity</h2>
@@ -136,7 +136,7 @@
                 <p>Photography often presents unforeseen challenges, from changing weather conditions to unexpected technical issues. We embrace adaptability, finding creative solutions and maintaining composure under pressure to deliver exceptional results.</p>
             </div>
         </div>
-        <a href="#" class="">Book Your Free Consulation <i class="fa-solid fa-angles-right"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=9063062062&text&type=phone_number&app_absent=0" target="_blank" class="book-free-consulation">Book Your Free Consulation <i class="fa-solid fa-angles-right"></i></a>
     </div>
 
     <!-- Whatsapp Button -->
@@ -174,6 +174,16 @@ const  showAlert = e =>{
 }
 
 document.addEventListener("contextmenu",showAlert);
+    </script>
+    <script>
+        ScrollReveal({ reset: true,
+        distance : '60px',
+        duration: 1500,
+        delay:200 });
+        ScrollReveal().reveal('header,.modal,.home-about-img,.home-section3-heading', { delay: 400 , origin : 'top'});
+        ScrollReveal().reveal('.home-item-card', { delay: 400 , origin : 'bottom'});
+        ScrollReveal().reveal('.home-about-img,.home-section2-heading', { delay: 400 , origin : 'left'});
+        ScrollReveal().reveal('.home-section1-right,.home-section2-content', { delay: 400 , origin : 'right'});
     </script>
 </body>
 </html>

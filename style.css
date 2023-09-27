@@ -52,6 +52,9 @@ header ul li a:hover{
     background-size: cover;
     background-attachment: fixed;
 }
+.home-section1{
+    overflow: hidden;
+}
 .home-section1-left{
     width: 40%;
 }
@@ -62,6 +65,9 @@ header ul li a:hover{
 }
 .home-section1-right{
     width: 40%;
+}
+.home-section2{
+    overflow: hidden;
 }
 .home-item-card{
     text-align: center;
@@ -83,6 +89,7 @@ header ul li a:hover{
     width: 80%;
     margin: 2rem auto;
     position: relative;
+    overflow: hidden;
 }
 .home-collections-container img{
     width: 30%;
@@ -118,6 +125,10 @@ header ul li a:hover{
 .about-section1{
     width: 90%;
     margin: 2rem auto;
+    overflow: hidden;
+}
+.about-section2{
+    overflow: hidden;
 }
 .about-section2 div{
     width: 40%;
@@ -129,6 +140,7 @@ header ul li a:hover{
 }
 .about-section3{
     width: 90%;
+    overflow: hidden;
     margin: 2rem auto;
 }
 
@@ -161,6 +173,7 @@ header ul li a:hover{
     width: 80%;
     margin: 2rem auto;
     text-align: center;
+    overflow: hidden;
 }
 .teasers-section2{
     padding: 6rem 0rem;
@@ -186,6 +199,7 @@ header ul li a:hover{
 .gallery-section1{
     width: 80%;
     margin: 3rem auto;
+    overflow: hidden;
 }
 .all-gallery-imgs img{
     width: 20rem;
@@ -237,12 +251,19 @@ header ul li a:hover{
 .moments-section1{
     width: 90%;
     margin: 2rem auto;
+    overflow: hidden;
+}
+.moments-section2{
+    overflow: hidden;
 }
 .moments-section2-sub1 img{
     width: 30rem;
 }
 .moments-section2-sub1-content{
     width: 40%;
+}
+.moments-section3{
+    overflow: hidden;
 }
 .moments-section3 img{
     width: 100%;
@@ -260,6 +281,7 @@ header ul li a:hover{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
 .contact-main-background h2, .about-main-background h2,.gallery-main-background h2,.moments-main-background h2,.teaser-main-background h2{
     font-size: 4rem;
@@ -273,6 +295,9 @@ header ul li a:hover{
 .contact-main-background img, .about-main-background img{
     right: 1rem;
     bottom: 1rem;
+}
+.contact-section1{
+    overflow: hidden;
 }
 .contact-section1,.contact-form{
     word-wrap: break-word;
@@ -290,6 +315,8 @@ header ul li a:hover{
     word-wrap: break-word;
     width: 80%;
     margin: 3rem auto;
+    overflow: hidden;
+    padding: 1rem;
 }
 .contact-form form input,.contact-form form button{
     width: 100%;
@@ -309,6 +336,9 @@ header ul li a:hover{
     display: block;
     font-size: 1.5rem;
     font-family: 'Tenali Ramakrishna', sans-serif;
+}
+.contact-our-location{
+    overflow: hidden;
 }
 
 

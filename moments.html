@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="./images/i5-logo.png" type="image/x-icon">
 
     <!-- Scroll Reveal -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Bootstrap Link -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,15 +49,15 @@
 
 
 <div class="moments-section1 text-center">
-    <h1 class="text-primary">Discover Unforgettable Moments in Our Photography Collection</h1>
-    <p>Welcome to our Moments Collection Page, where time stands still, and emotions are frozen in a single frame. Here, we invite you to explore a treasure trove of captivating moments, each meticulously captured to evoke the essence of life's most cherished experiences.</p>
+    <h1 class="text-primary moments-section1-heading">Discover Unforgettable Moments in Our Photography Collection</h1>
+    <p class="moments-section1-content">Welcome to our Moments Collection Page, where time stands still, and emotions are frozen in a single frame. Here, we invite you to explore a treasure trove of captivating moments, each meticulously captured to evoke the essence of life's most cherished experiences.</p>
 </div>
     
 <div class="moments-section2 mt-4 mb-5 gap-4">
     <h1 class="text-center text-primary p-4">Best Moments Collection!</h1>
     <div class="moments-section2-sub1 d-flex align-items-center justify-content-around">
-        <img src="./gallery-imgs/jpeg-optimizer_IMG_20221117_063431.jpg" alt="" class="">
-        <div class="moments-section2-sub1-content text-center">
+        <img src="./gallery-imgs/jpeg-optimizer_IMG_20221117_063431.jpg" alt="" class="moments-section2-sub1-img">
+        <div class="moments-section2-sub1-content1 text-center">
             <h2>SO MUCH TO REMEMBER. TIME FLIES BY,THAT’S WHERE I COME IN!</h2>
             <p>"The cute and timeless moments will remind you of what brought you together, and reaffirm that you’re united not just in your love, but also in your faith. No matter what, they’re bound to leave an imprint in your own hearts, as well as your loved ones’. Capture them"</p>
         </div>
@@ -66,21 +66,21 @@
         <div class="moments-section2-sub1-content text-center">
             <h2>MAKING YOU RELIVE YOUR MOMENTS</h2>
         </div>
-        <img src="./gallery-imgs/jpeg-optimizer_A01I4169.jpg" alt="" class="">
+        <img src="./gallery-imgs/jpeg-optimizer_A01I4169.jpg" alt="" class="moments-section2-sub1-img2">
     </div>
 </div>
 
 <div class="moments-section3">
     <h1 class="text-center">Moments of love, laughter, and wonder come to life in our collection, inviting you to relive the essence of each experience!</h1>
-    <img src="./gallery-imgs/026_1_11zon.jpg" alt="">
-    <img src="./gallery-imgs/027_2_11zon.jpg" alt="">
-    <img src="./gallery-imgs/028_3_11zon.jpg" alt="">
-    <img src="./gallery-imgs/A01I1315_4_11zon.jpg" alt="">
-    <img src="./gallery-imgs/jpeg-optimizer_RSK04970.jpg" alt="" class="">
-    <img src="./gallery-imgs/jpeg-optimizer_A12I6501.jpg" alt="" class="">
-    <img src="./gallery-imgs/jpeg-optimizer_39.jpg" alt="" class="">
-    <img src="./gallery-imgs/jpeg-optimizer_023A8497.jpg" alt="" class="">
-    <img src="./gallery-imgs/jpeg-optimizer_A12I7062.jpg" alt="" class="">
+    <img src="./gallery-imgs/026_1_11zon.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/027_2_11zon.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/028_3_11zon.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/A01I1315_4_11zon.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/jpeg-optimizer_RSK04970.jpg" alt=""class="moments-section3-img">
+    <img src="./gallery-imgs/jpeg-optimizer_A12I6501.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/jpeg-optimizer_39.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/jpeg-optimizer_023A8497.jpg" alt="" class="moments-section3-img">
+    <img src="./gallery-imgs/jpeg-optimizer_A12I7062.jpg" alt="" class="moments-section3-img">
 </div>
 
 <!-- Whatsapp Button -->
@@ -103,7 +103,7 @@
     </div>
 </footer>
 <div class="copy-right pt-2 pb-2 d-flex align-items-center justify-content-center text-bg-secondary">
-    <p class="m-3 text-center">Copyright <span style="font-size: 1rem;">&copy;</span> 2023. All Rights Reserved By  <a href="./index.html" class="text-white"> i5 Photography</a></p>
+    <p class="m-3 text-center">Copyright <span>&copy;</span> 2023. All Rights Reserved By  <a href="./index.html" class="text-white"> i5 Photography</a></p>
 </div>
 
 <!-- JavaScript -->
@@ -115,6 +115,16 @@
 }
 
 document.addEventListener("contextmenu",showAlert);
+</script>
+<script>
+    ScrollReveal({ reset: true,
+    distance : '60px',
+    duration: 1500,
+    delay:200 });
+    ScrollReveal().reveal('header,.modal', { delay: 400 , origin : 'top'});
+    ScrollReveal().reveal('.moments-section3-img', { delay: 400 , origin : 'bottom',interval:200});
+    ScrollReveal().reveal('.moments-section1-heading,.moments-section2-sub1-content1,.moments-section2-sub1-img2', { delay: 400 , origin : 'right'});
+    ScrollReveal().reveal('.moments-main-background,.moments-section1-content,.moments-section2-sub1-img,.moments-section2-sub1-content', { delay: 400 , origin : 'left'});
 </script>
 </body>
 </html>
